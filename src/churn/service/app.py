@@ -5,10 +5,11 @@ from contextlib import asynccontextmanager
 import joblib
 import pandas as pd
 from fastapi import BackgroundTasks, FastAPI, HTTPException
-
 from pydantic import BaseModel, Field
+
 from churn import db
 from churn.config import settings
+
 
 class Features(BaseModel):
     model_config = {"extra": "forbid"}
