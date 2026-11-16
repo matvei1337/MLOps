@@ -37,6 +37,7 @@ environments = [
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+markers = ["integration: нужна база данных - адрес ы DATABASE_URL"]
 addopts = "-q"
 
 [tool.ruff]
